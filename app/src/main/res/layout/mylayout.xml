@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="69dp"
+        android:text="Prenom" />
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/prenom"
+        android:layout_alignRight="@+id/prenom"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="121dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:text="Nom" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/prenom"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="164dp"
+        android:text="Age"
+        android:layout_marginLeft="0dp"
+        android:layout_alignLeft="@+id/prenom" />
+
+    <TextView
+        android:id="@+id/sexe"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/prenom"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="221dp"
+        android:layout_marginEnd="0dp"
+        android:text="Sexe"
+        android:layout_marginRight="0dp"
+        android:layout_alignRight="@+id/prenom" />
+
+    <TextView
+        android:id="@+id/telephone"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignStart="@+id/prenom"
+        android:layout_alignLeft="@+id/prenom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginBottom="200dp"
+        android:text="Téléphone" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/prenom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="162dp"
+        android:text="E-mail"
+        android:layout_alignLeft="@+id/prenom"
+        android:layout_marginLeft="2dp" />
+
+    <TextView
+        android:id="@+id/niveau"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/prenom"
+        android:layout_alignRight="@+id/prenom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-9dp"
+        android:layout_marginRight="-9dp"
+        android:layout_marginBottom="104dp"
+        android:text="Niveau" />
+
+    <EditText
+        android:id="@+id/etprenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="saisir le prénom" />
+
+    <EditText
+        android:id="@+id/etnom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etprenom"
+        android:layout_alignRight="@+id/etprenom"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="saisir le nom" />
+
+    <EditText
+        android:id="@+id/etage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etprenom"
+        android:layout_alignLeft="@+id/etprenom"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Ton age" />
+
+    <CheckBox
+        android:id="@+id/cbm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etprenom"
+        android:layout_alignTop="@+id/sexe"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="-4dp"
+        android:text="M"
+        android:layout_alignLeft="@+id/etprenom"
+        android:layout_marginLeft="5dp" />
+
+    <CheckBox
+        android:id="@+id/cbf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etprenom"
+        android:layout_alignRight="@+id/etprenom"
+        android:layout_alignBottom="@+id/cbm"
+        android:layout_marginEnd="82dp"
+        android:layout_marginRight="82dp"
+        android:layout_marginBottom="0dp"
+        android:text="F" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etprenom"
+        android:layout_alignLeft="@+id/etprenom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="151dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etprenom"
+        android:layout_alignLeft="@+id/etprenom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="205dp"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/niv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cbm"
+        android:layout_alignLeft="@+id/cbm"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="96dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Niveau d'études" />
+
+    <Button
+        android:id="@+id/btnvalider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginBottom="17dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="VALIDER" />
+
+    <Button
+        android:id="@+id/btnannuler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnvalider"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="ANNULER" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Formulaire étudiant" />
+
+
+</RelativeLayout>
