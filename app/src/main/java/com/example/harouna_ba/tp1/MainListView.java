@@ -3,9 +3,12 @@ package com.example.harouna_ba.tp1;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
+
 
 import com.example.harouna_ba.tp1.bean.Etudiant;
 
@@ -13,11 +16,27 @@ import java.util.List;
 
 public class MainListView extends AppCompatActivity {
     EditText pren,name,age,email,tel,niv,fil,sexe;
+    private RecyclerView mRecyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
+    private String[] myDataset;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_listview);
+        mRecyclerView = (RecyclerView) findViewById(R.id.rv);
+        // use this setting to improve performance if you know that changes
+        // in content do not change the layout size of the RecyclerView
+        mRecyclerView.setHasFixedSize(true);
+
+        // use a linear layout manager
+        mLayoutManager = new LinearLayoutManager(this);
+        mRecyclerView.setLayoutManager(mLayoutManager);
+
+        // specify an adapter (see also next example)
+        mAdapter = new RecycleViewAdapter(myDataset);
+        mRecyclerView.setAdapter(mAdapter);
         afficherListEtudiant();
     }
 

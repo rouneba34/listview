@@ -27,6 +27,7 @@ public class Formulaire extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formulaire);
+
         //Toast.makeText(getApplicationContext(),"Bienvenue M1SIR",Toast.LENGTH_LONG).show();
         prenom =    (EditText) findViewById(R.id.etprenom);
         nom =       (EditText) findViewById(R.id.etnom);
